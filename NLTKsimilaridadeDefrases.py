@@ -2,7 +2,6 @@ import re
 import nltk
 import string
 from nltk.cluster.util import cosine_distance
-import networkx as nx
 
 # nltk.download('punkt')
 # nltk.download('stopwords')
@@ -43,6 +42,7 @@ experimento."""
 
 originalSentence = [sentence for sentence in nltk.sent_tokenize(text)]
 formatedSentence = [preProcessing(originalSentence) for originalSentence in nltk.sent_tokenize(text)]
+ 
 # print(originalSentence)
 
 def sentSimilarity(sent1, sent2):
@@ -70,5 +70,6 @@ def sentSimilarity(sent1, sent2):
     # faz o calculo/ verificação
     return 1 - cosine_distance(vet1, vet2)
 
-print(sentSimilarity(formatedSentence[0], formatedSentence[3]))
-print(formatedSentence[0], formatedSentence[3])
+# print(sentSimilarity(formatedSentence[0], formatedSentence[3]))
+# print(formatedSentence[0], formatedSentence[3])
+

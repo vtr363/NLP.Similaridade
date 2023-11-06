@@ -1,8 +1,7 @@
-# import re
+import re
 import nltk
-# import string
-# from nltk.cluster.util import cosine_distance
-# import networkx as nx
+import string
+from nltk.cluster.util import cosine_distance
 
 # # nltk.download('punkt')
 # # nltk.download('stopwords')
