@@ -6,15 +6,19 @@ from tika import parser
 def compareDocs(docURL, docURL2):
     if docURL.endswith('.pdf'):
         
-        # PyPDF2
+        # # PyPDF2
         # reader = PdfReader(docURL)
-        # page = reader.pages[0]
-        # text = page.extract_text()
+        # text = ''
+        # for i in range(len(reader.pages)):
+        #     page = reader.pages[i]
+        #     text += page.extract_text()
         # text = preProcessing(text)
 
         # reader2 = PdfReader(docURL2)
-        # page2 = reader2.pages[0]
-        # text2 = page2.extract_text()
+        # text2 = ''
+        # for i in range(len(reader2.pages)):
+        #     page2 = reader2.pages[i]
+        #     text2 += page2.extract_text()
         # text2 = preProcessing(text2)
         
         #tika
