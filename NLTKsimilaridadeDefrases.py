@@ -67,7 +67,7 @@ def sentSimilarity(sent1, sent2):
     # print(vet1)
     # print(vet2)
     
-    # faz o calculo/ verificação
+    # faz o calculo/ verificação da semelhança
     return 1 - cosine_distance(vet1, vet2)
 
 # print(sentSimilarity(formatedSentence[0], formatedSentence[3]))
